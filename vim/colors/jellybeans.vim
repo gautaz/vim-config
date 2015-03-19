@@ -1,0 +1,1 @@
+../../colors/jellybeans.vim/colors/jellybeans.vim
