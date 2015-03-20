@@ -37,3 +37,6 @@
 [submodule "colors/jellybeans.vim"]
 	path = colors/jellybeans.vim
 	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
