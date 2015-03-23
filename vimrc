@@ -6,6 +6,7 @@ set confirm
 set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 set laststatus=2
 set backspace=indent,eol,start
+set scrolloff=7
 set showcmd
 colorscheme jellybeans
 syntax on
