@@ -23,3 +23,5 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+noremap <leader>f :Autoformat<CR>
