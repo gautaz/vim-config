@@ -24,4 +24,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
+let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+let g:formatprg_css = s:path."/helpers/autoformat/css-beautify.sh"
+let g:formatprg_html = s:path."/helpers/autoformat/html-beautify.sh"
+
 noremap <leader>f :Autoformat<CR>
