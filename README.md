@@ -7,7 +7,7 @@ This configuration is mainly targeted at Javascript, HTML, CSS and co.
 
     cd <some-location>
     git clone --recursive https://github.com/gautaz/vim-config.git
-    cd bundle/tern_for_vim
+    cd vim-config/bundle/tern_for_vim
     npm install
     cd
     ln -s <some-location>/vim-config/vim .vim
