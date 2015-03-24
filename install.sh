@@ -3,6 +3,9 @@ set -o errexit
 
 CONFIGDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 
+# ensure that the system node.js is used for the following commands
+nvm deactivate >& /dev/null || true
+
 cd "${CONFIGDIR}/bundle/tern_for_vim"
 npm install
 
