@@ -8,6 +8,7 @@ set laststatus=2
 set backspace=indent,eol,start
 set scrolloff=7
 set showcmd
+set omnifunc=syntaxcomplete#Complete
 colorscheme jellybeans
 syntax on
 filetype plugin indent on
