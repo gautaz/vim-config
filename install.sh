@@ -9,9 +9,8 @@ nvm deactivate >& /dev/null || true
 cd "${CONFIGDIR}/bundle/tern_for_vim"
 npm install
 
-# jshint is used by syntastic to verify Javascript syntax
-# js-beautify is used by vim-autoformat to reformat Javascript
-npm install -g jshint js-beautify > /dev/null
+cd "${CONFIGDIR}/helpers"
+npm install
 
 rm -rf "${CONFIGDIR}/backup"
 mkdir "${CONFIGDIR}/backup"
