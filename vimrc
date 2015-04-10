@@ -28,6 +28,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
+let g:formatprg_javascript = s:path."/helpers/autoformat/js-beautify.sh"
+let g:formatprg_args_expr_javascript = '"\"".expand("%:p:h")."\""'
 let g:formatprg_css = s:path."/helpers/autoformat/css-beautify.sh"
 let g:formatprg_html = s:path."/helpers/autoformat/html-beautify.sh"
 
