@@ -3,7 +3,7 @@ execute pathogen#infect()
 set modeline
 set hidden
 set confirm
-set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
+set noexpandtab shiftwidth=4 tabstop=4 softtabstop=0
 set laststatus=2
 set backspace=indent,eol,start
 set scrolloff=7
@@ -12,6 +12,8 @@ set omnifunc=syntaxcomplete#Complete
 colorscheme jellybeans
 syntax on
 filetype plugin indent on
+
+autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 let mapleader=","
 
@@ -28,11 +30,10 @@ let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=1
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-let g:formatprg_javascript = s:path."/helpers/autoformat/js-beautify.sh"
-let g:formatprg_args_expr_javascript = '"\"".expand("%:p:h")."\""'
-let g:formatprg_css = s:path."/helpers/autoformat/css-beautify.sh"
-let g:formatprg_html = s:path."/helpers/autoformat/html-beautify.sh"
-let g:formatprg_json = "js-beautify"
-let g:formatprg_args_json = "-f - -s 2"
+let g:formatters_javascript = ['jscs', 'jsbeautify_javascript']
+let g:formatdef_custom_css = '"css-beautify -f - ".(&expandtab ? "-s ".&shiftwidth : "-t")'
+let g:formatters_css = ['custom_css']
+let g:formatdef_custom_html = '"html-beautify -f - ".(&expandtab ? "-s ".&shiftwidth : "-t")'
+let g:formatters_html = ['custom_html']
 
 noremap <leader>f :Autoformat<CR>
