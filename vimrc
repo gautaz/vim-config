@@ -16,6 +16,7 @@ syntax on
 filetype plugin indent on
 
 autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufReadPost fugitive://* set bufhidden=delete
 
 let mapleader=","
 
