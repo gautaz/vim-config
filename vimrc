@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+set timeoutlen=1000 ttimeoutlen=0
 set modeline
 set hidden
 set confirm
@@ -18,7 +19,7 @@ filetype plugin indent on
 autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufReadPost fugitive://* set bufhidden=delete
 
-let mapleader=","
+let mapleader=" "
 
 let s:path = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let $PATH=s:path.'/helpers/path:'.$PATH
@@ -40,3 +41,11 @@ let g:formatdef_custom_html = '"html-beautify -f - ".(&expandtab ? "-s ".&shiftw
 let g:formatters_html = ['custom_html']
 
 noremap <leader>f :Autoformat<CR>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
