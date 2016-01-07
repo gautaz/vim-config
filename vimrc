@@ -25,6 +25,7 @@ filetype plugin indent on
 
 autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd BufReadPost fugitive://* set bufhidden=delete
+autocmd BufNewFile,BufRead Dockerfile.* setf dockerfile
 
 let mapleader=" "
 
