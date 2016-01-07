@@ -12,7 +12,8 @@ set showcmd
 set omnifunc=syntaxcomplete#Complete
 set wildmenu
 set wildmode=longest,list
-colorscheme jellybeans
+set background=light
+colorscheme mango
 syntax on
 filetype plugin indent on
 
@@ -26,7 +27,7 @@ let $PATH=s:path.'/helpers/path:'.$PATH
 
 let g:airline_powerline_fonts=1
 let g:airline#extensions#syntastic#enabled=1
-let g:airline_theme="wombat"
+let g:airline_theme="light"
 
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1

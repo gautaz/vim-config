@@ -64,3 +64,9 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "bundle/papercolor-theme"]
+	path = bundle/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
+[submodule "bundle/mango.vim"]
+	path = bundle/mango.vim
+	url = https://github.com/goatslacker/mango.vim.git
