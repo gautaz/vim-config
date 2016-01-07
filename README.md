@@ -11,7 +11,7 @@ This configuration is mainly targeted at Javascript, HTML, CSS and co.
 
 ## Custom key mappings
 
-The {leader} key is comma (**,**).
+The {leader} key is <kbd>space</kbd>.
 
 In order to launch autoformat, use **{leader}f**.
 
