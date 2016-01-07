@@ -12,6 +12,12 @@ set showcmd
 set omnifunc=syntaxcomplete#Complete
 set wildmenu
 set wildmode=longest,list
+set clipboard=unnamed
+set diffopt+=vertical
+set guifont=Sauce\ Code\ Powerline:h15
+set guioptions-=L
+set guioptions-=r
+set guioptions+=c
 set background=light
 colorscheme mango
 syntax on
