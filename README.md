@@ -1,5 +1,7 @@
 # vim-config
 
+**DEPRECATED** in favor of [dotfiles](https://github.com/gautaz/dotfiles) with [neovim](https://neovim.io/)
+
 A versioned container for my vim configuration.
 This configuration is mainly targeted at Javascript, HTML, CSS and co.
 
